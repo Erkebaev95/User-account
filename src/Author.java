@@ -2,14 +2,14 @@ public class Author {
     private final String surname;
     private final String name;
     private final String birthday;
-    private final String county;
+    private final String country;
     private final Book[] books;
 
-    public Author(String surname, String name, String birthday, String county, Book[] books) {
+    public Author(String surname, String name, String birthday, String country, Book[] books) {
         this.surname = surname;
         this.name = name;
         this.birthday = birthday;
-        this.county = county;
+        this.country = country;
         this.books = books;
     }
 
@@ -26,7 +26,7 @@ public class Author {
     }
 
     public String getCounty() {
-        return county;
+        return country;
     }
 
     public Book[] getBooks() {
@@ -39,7 +39,7 @@ public class Author {
                 "surname='" + surname + '\'' +
                 ", name='" + name + '\'' +
                 ", birthday='" + birthday + '\'' +
-                ", county='" + county + '\'' +
+                ", county='" + country + '\'' +
                 '}';
     }
 }
